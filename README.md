@@ -8,8 +8,12 @@ SPDX-License-Identifier: Apache-2.0
 
 An open context layer that helps agents give fewer wrong answers on enterprise data.
 
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
-[![Docs](https://img.shields.io/badge/docs-docs%2F-76B900.svg)](./docs/)
+[![license](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/NVIDIA/TensorRT-LLM/blob/main/LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://github.com/hao-hoang/auto-ontology/tree/main/docs)
+
+Agents can retrieve documents and query databases, but reliability is what gates agentic analytics: a revenue figure delivered faster is worth nothing if it's wrong. Before an agent queries, it needs to know where the data lives, what it means, whether to use it, how to use it, where it came from, and what is similar.
+
+Auto-Ontology is a service you run next to your databases to give agents that context. It compiles their metadata into an ontology: business terms mapped to columns, reviewed SQL for measures, and the relationships between tables. Agents query through the ontology, and people review it in a web UI. It complements the semantic models you already own.
 
 ## How it works
 
